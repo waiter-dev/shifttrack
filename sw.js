@@ -1,11 +1,11 @@
-/* TipLog Service Worker v1.1.23
+/* TipLog Service Worker v1.1.24
  * Zweck: App-Shell offline verfügbar machen (Kaltstart ohne Netz).
  * Strategie: Network-first mit Cache-Fallback → online immer die
  * neueste Version, offline die zuletzt geladene.
  * WICHTIG: Bei jedem Release die CACHE-Konstante mit hochzählen,
  * damit alte Versionen sauber ersetzt werden.
  */
-const CACHE = 'tiplog-v1.1.23';
+const CACHE = 'tiplog-v1.1.24';
 
 self.addEventListener('install', e => {
   e.waitUntil(
